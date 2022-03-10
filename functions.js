@@ -88,42 +88,110 @@
 // }
 // saylti()
 
-let userName = "Tolu"
+// let userName = "Tolu"
 
-function changeName(name){
-    name = "Balikis"
-}
-changeName(userName)
-console.log(userName)
+// function changeName(name){
+//     name = "Balikis"
+// }
+// changeName(userName)
+// console.log(userName)
 
-function movement(person){
-    console.log(`when $ {person.name} runs ${person.isWig ? "her wig falls" : "breeze blows her hair"}`)
-}
+// function movement(person){
+//     console.log(`when $ {person.name} runs ${person.isWig ? "her wig falls" : "breeze blows her hair"}`)
+// }
 
-function animation(defineCharacterMovement){
-    let character ={
-        name: "adeola",
-        isWig: true,
-        gender: "female",
+// function animation(defineCharacterMovement){
+//     let character ={
+//         name: "adeola",
+//         isWig: true,
+//         gender: "female",
+//     }
+//     defineCharacterMovement(character)
+// }
+// animation(movement)
+
+
+// let persons=["fola","adeola","ruth","increase","father upah","lotachi"]
+
+// persons.map((data)=> console.log(data)) 
+
+
+
+// let person = {
+//     userName:"jerry",
+//     gender: "male",
+//     school : "uniag"
+// }
+// for (key in person){
+//     console.log(person[key])
+// }
+// console.log(Object.keys(person))
+// console.log(object.values(person))
+
+
+// function callMe(phoneNumber,countryDial){ 
+//     if(phoneNumber !== ""){
+//         countryDial(phoneNumber)
+
+//     }else{
+//         console.log("enter a valid number")
+//     }
+// }
+
+// const dial = (phoneNumber)=> console.log(`calling ${phoneNumber}`)
+
+// callMe("08567435234",dial)
+
+
+//  let anArray = [1,2,3,4,5,6,7,8]
+
+// function getEvenNumber(anArray){
+//     let evenNumber =0
+//     for(let i=0; i<anArray.length; i++){
+//     if(anArray[i] % 2 === 0){
+//         evenNumber=anArray[i]
+//         console.log(evenNumber)
+        
+//     }
+// }
+// }
+//     getEvenNumber(anArray)
+
+
+// for(let i=0;i<anArray.length;i++){}
+
+// (function getEvenNumber(anArray){for (let i=0;i<anArray.length;i++){anArray[i] % 2 === 0 && process.stdout.write(anArray[i]+" ")} })([1,2,3,4,5,6,7,8])
+
+// (anArray=[1,2,3,4,5,6,7,8]),evenNumber =[],anArray.forEach(number=>{if(number% 2 === 0) { evenNumber.push(number); } }),process.stdout.write(evenNumber +"");
+
+// (anArray=[1,2,3,4,5,6,7,8],anArray.forEach(number=>{if(number% 2 === 0) process.stdout.write(number+" ")}))
+
+
+// function factorial(x){
+//     if(x===0){
+//         return 1;
+//     }
+//     else {
+//         return x * factorial(x-1)
+//     }
+// }
+// const number = 3
+// if(number > 0){ 
+//     let result = factorial(number);
+//     console.log(`the factorial of ${number} is ${result}`)
+// }
+// if(number > 0){ evenNumber}
+
+let pseudo ={
+    anArray : [1,2,3,4,5,6,7,8],
+    pseudoForEach : function(iterator){
+        for (let i=0; i<this.anArray.length;i++){
+            iterator(this.anArray[i]);
+        }
     }
-    defineCharacterMovement(character)
-}
-animation(movement)
+};
 
-
-let persons=["fola","adeola","ruth","increase","father upah","lotachi"]
-
-persons.map((data)=> console.log(data)) 
+pseudo.pseudoForEach((value)=>value % 2 === 0 && console.log(value +" "))
 
 
 
-let person = {
-    userName:"jerry",
-    gender: "male",
-    school : "uniag"
-}
-for (key in person){
-    console.log(person[key])
-}
-console.log(Object.keys(person))
-console.log(object.values(person))
